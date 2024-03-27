@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculator{
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--tetri);
+    margin: 100px auto;
+    border: 1px solid #f5f5f5;
+}
+
+:root{
+    --tetri:#ffffff;
+    --nacari:#e5e5e5;
+    --muqinacari:#808080;
+    --stafilo:#f09536;
+    --surati:url(../img/k.jpg);
+}
+body{
+    background-image:var(--surati) ;
+    background-size: 100%;
+   background-repeat: no-repeat ;
+   transition: 0.5s;
+}
+.calchead{
+    padding: 70px 0 0 0;
+    
+    
+}
+.answer{
+    text-align: right;
+    font-size: 32px;
+    
+}
+.btn{
+    width: 80px;
+    height:80px ;
+    background-color: var(--nacari);
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.calcbtn.flex{
+    flex-wrap: wrap;
+}
+.btn.flex{
+    justify-content: center;
+}
+.btn:hover{
+background-color: #f3f3f3;
+}
+.nacari{
+    background-color: var(--muqinacari);
+    color: var(--tetri);
+}
+.stafilo{
+    background-color: var(--stafilo);
+    
+}
+.nacari:hover{
+   background-color: #a5a5a5; 
+}
+.stafilo:hover{
+    background-color: #fbb66d;
+}
+
+.zero{
+    width: 180px;
+    border-radius: 80px;
+    padding-left: 30px;
+}
+.gamosaxuleba{
+    text-align: right;
+}
+.zero.flex{
+    justify-content: flex-start;
+}
+.switch{
+    font-size: 50px;
+    position: absolute;
+    top: 20px; 
+    right: 30px;
+    color: var(--muqinacari);
+}
